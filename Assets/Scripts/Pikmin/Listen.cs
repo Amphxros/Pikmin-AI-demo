@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Listen : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private PikminBehaviour pikminBehaviour;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        pikminBehaviour = GetComponent<PikminBehaviour>();
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        Whistle w= other.GetComponent<Whistle>();
+        if(w != null)
+        {
+            pikminBehaviour.SetPikminState(PikminState.FOLLOWING);
+        }
     }
 }
