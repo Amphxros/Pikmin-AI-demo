@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1055729101614324947}
   - component: {fileID: 4716364334524705941}
   - component: {fileID: 5659430966574537245}
+  - component: {fileID: 4280137742318627181}
   m_Layer: 0
   m_Name: pikmin
   m_TagString: Untagged
@@ -96,6 +97,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   manager: {fileID: 0}
+--- !u!195 &4280137742318627181
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 63351923884886675}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.15
+  m_Speed: 6
+  m_Acceleration: 25
+  avoidancePriority: 50
+  m_AngularSpeed: 6000
+  m_StoppingDistance: 0.25
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 3
 --- !u!1 &1067036218200871192
 GameObject:
   m_ObjectHideFlags: 0
